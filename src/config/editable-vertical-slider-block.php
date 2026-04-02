@@ -9,7 +9,8 @@ return [
         ],
     ],
 
-    "slidesPerView" => 6, // 3 or 6
+    "slidesPerView" => 3, // 3 or 6
+    "textOnPicture" => false,
 
     // Components
     "customSlidesComponent" => null,
