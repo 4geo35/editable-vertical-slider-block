@@ -8,8 +8,13 @@ return [
             "render" => "evsb::types.slides",
         ],
     ],
+
+    "slidesPerView" => 3,
+
     // Components
     "customSlidesComponent" => null,
     // Templates
-    "templates" => [],
+    "templates" => [
+        "vertical-slider-item" => \GIS\EditableVerticalSliderBlock\Templates\VerticalSliderItem::class,
+    ],
 ];
