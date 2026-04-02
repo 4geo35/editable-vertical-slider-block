@@ -16,16 +16,33 @@
                 loop: true,
                 simulateTouch: true,
                 spaceBetween: 24,
-
                 slidesPerView: 1,
-                breakpoints: {
-                    480: {
-                        slidesPerView: 2,
+
+                @if ($perView === 3)
+                    breakpoints: {
+                        480: {
+                            slidesPerView: 2,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                        }
                     },
-                    1024: {
-                        slidesPerView: 3,
-                    }
-                },
+                @else
+                    breakpoints: {
+                        480: {
+                            slidesPerView: 2,
+                        },
+                        768: {
+                            slidesPerView: 3,
+                        },
+                        1024: {
+                            slidesPerView: 4,
+                        },
+                        1280: {
+                            slidesPerView: 6,
+                        },
+                    },
+                @endif
 
                 navigation: {
                     nextEl: nextBtnElement,

@@ -9,7 +9,7 @@ return [
         ],
     ],
 
-    "slidesPerView" => 3,
+    "slidesPerView" => 6, // 3 or 6
 
     // Components
     "customSlidesComponent" => null,
@@ -18,5 +18,9 @@ return [
         "vertical-slider-item" => \GIS\EditableVerticalSliderBlock\Templates\VerticalSliderItem::class,
         "tablet-vertical-slider-item" => \GIS\EditableVerticalSliderBlock\Templates\TabletVerticalSliderItem::class,
         "mobile-vertical-slider-item" => \GIS\EditableVerticalSliderBlock\Templates\MobileVerticalSliderItem::class,
+
+        "vertical-slider-half-item" => \GIS\EditableVerticalSliderBlock\Templates\VerticalSliderHalfItem::class,
+        "tablet-vertical-slider-half-item" => \GIS\EditableVerticalSliderBlock\Templates\TabletVerticalSliderHalfItem::class,
+        "mobile-vertical-slider-half-item" => \GIS\EditableVerticalSliderBlock\Templates\MobileVerticalSliderHalfItem::class,
     ],
 ];
