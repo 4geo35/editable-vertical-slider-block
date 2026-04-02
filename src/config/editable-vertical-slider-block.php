@@ -16,5 +16,7 @@ return [
     // Templates
     "templates" => [
         "vertical-slider-item" => \GIS\EditableVerticalSliderBlock\Templates\VerticalSliderItem::class,
+        "tablet-vertical-slider-item" => \GIS\EditableVerticalSliderBlock\Templates\TabletVerticalSliderItem::class,
+        "mobile-vertical-slider-item" => \GIS\EditableVerticalSliderBlock\Templates\MobileVerticalSliderItem::class,
     ],
 ];

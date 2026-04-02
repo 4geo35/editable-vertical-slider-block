@@ -20,6 +20,9 @@
                 slidesPerView: 1,
                 breakpoints: {
                     480: {
+                        slidesPerView: 2,
+                    },
+                    1024: {
                         slidesPerView: 3,
                     }
                 },
