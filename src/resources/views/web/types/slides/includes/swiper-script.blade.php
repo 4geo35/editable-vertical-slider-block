@@ -1,4 +1,5 @@
 @push("scripts")
+    @php($perView = config("editable-vertical-slider-block.slidesPerView"))
     <script type="application/javascript">
         (function () {
             document.addEventListener("DOMContentLoaded", function () {
