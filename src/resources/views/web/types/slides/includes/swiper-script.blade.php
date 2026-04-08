@@ -9,9 +9,11 @@
         })()
 
         function initBlockVerticalSliderSliders{{ $block->id }}(sliderElement) {
-            let navigationElement = document.getElementById("swiperBlockVerticalSliderNavigation-{{ $block->id }}")
-            let prevBtnElement = navigationElement.querySelector(".prev-btn")
-            let nextBtnElement = navigationElement.querySelector(".next-btn")
+            @if ($block->render_title)
+                let navigationElement = document.getElementById("swiperBlockVerticalSliderNavigation-{{ $block->id }}")
+                let prevBtnElement = navigationElement.querySelector(".prev-btn")
+                let nextBtnElement = navigationElement.querySelector(".next-btn")
+            @endif
 
             let swiper = new Swiper(sliderElement, {
                 loop: true,
@@ -45,10 +47,12 @@
                     },
                 @endif
 
-                navigation: {
-                    nextEl: nextBtnElement,
-                    prevEl: prevBtnElement,
-                }
+                @if ($block->render_title)
+                    navigation: {
+                        nextEl: nextBtnElement,
+                        prevEl: prevBtnElement,
+                    }
+                @endif
             })
         }
     </script>
