@@ -16,7 +16,7 @@
             @endif
 
             let swiper = new Swiper(sliderElement, {
-                loop: true,
+                loop: {{ $block->items->count() > 3 ? 'true' : 'false' }},
                 simulateTouch: true,
                 spaceBetween: 24,
                 slidesPerView: 1,
